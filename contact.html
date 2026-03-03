@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main w-full h-full overflow-hidden">
+      <!-- MENU -->
+      <div
+        id="menu"
+        class="sm:hidden w-full h-screen bg-[#023181] fixed top-0 left-0 z-[999] px-4 py-6 flex flex-col gap-10 justify-between opacity-0 -translate-y-full transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+      >
+        <div class="w-full flex items-center justify-between">
+          <a href="./home.html">
+            <img src="./assets/images/footerLogo.png" alt="" class="w-44" />
+          </a>
+          <img
+            id="menuClose"
+            src="./assets/svgs/crossIcon.svg"
+            alt=""
+            class="w-9"
+          />
+        </div>
+        <div
+          class="mobileMenuHeader flex flex-col items-center text-white/50 text-[1.8rem] font-extrabold gap-5"
+        >
+          <a href="./residential.html">Residential Cleaning</a>
+          <a href="./commercial.html">Commercial Cleaning</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./about.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="flex items-center gap-5 max-sm:flex-col">
+          <button
+            class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#E41B38] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+          >
+            Call us (831) 431-3896
+          </button>
+          <a href="./contact.html">
+            <button
+              class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#E41B38] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+            >
+              Request a Free Estimate
+              <img src="./assets/svgs/righty.svg" alt="" class="w-3" />
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- HEADER -->
+      <div
+        class="z-[99] fixed top-0 left-0 w-full flex items-center gap-10 px-4 sm:px-10 py-6 max-sm:justify-between"
+      >
+        <a href="./home.html" class="headerLogo">
+          <img src="./assets/images/logo.png" alt="" class="w-40 sm:w-52" />
+        </a>
+        <div
+          class="headerMenu flex items-center gap-5 font-semibold text-sm max-sm:hidden"
+        >
+          <a href="./residential.html" class="hover:text-[#1148A9]">
+            Residential Cleaning</a
+          >
+          <a href="./commercial.html" class="hover:text-[#1148A9]">
+            Commercial Cleaning
+          </a>
+          <a href="./gallery.html" class="hover:text-[#1148A9]"> Gallery</a>
+          <a href="./about.html" class="hover:text-[#1148A9]"> About Us</a>
+          <a href="./contact.html" class="hover:text-[#1148A9]"> Contact</a>
+        </div>
+        <img
+          id="menuOpen"
+          src="./assets/svgs/hamburger.svg"
+          alt=""
+          class="sm:hidden w-10"
+        />
+      </div>
+       <!-- SECTION 1 -->
+      <div
+        id="contactSection1Trigger"
+        class="w-full min-h-screen relative flex items-start pt-32 sm:pt-40 max-sm:flex-col max-sm:px-4 max-sm:gap-5
+        bg-gradient-to-b from-[#FFFFFF] to-[#1148A9]  max-sm:pb-5 sm:pb-10"
+      >
+        <div
+          class="w-full sm:w-1/2 sm:px-20 py-5 sm:py-10 flex flex-col text-[#020101] gap-6 sm:gap-10 max-sm:items-center
+          text-white"
+        >
+          <h1
+            style="line-height: 1.2"
+            class="contactHeading max-sm:hidden font-extrabold sm:text-[2.9rem] 2xl:text-[3.4rem]"
+          >
+            Get Your Free Estimate
+          </h1>
+            <h1
+            style="line-height: 1.2"
+            class="projectSec1Heading sm:hidden ak text-[1.4rem] xs:text-[1.8rem] text-center"
+          >
+            Get Your Free Estimate
+          </h1>
+          <p
+            class="contactPara mont sm:text-[1.2rem] 2xl:text-[1.4rem] pl-5 border-l-4 border-[#2925A9] ml-5 max-sm:hidden"
+          >
+           Contact 831 Cleaning Services today to schedule <br>
+            your free estimate and discuss your cleaning <br>
+              needs with our professional team.
+          </p>
+           <p
+            class="projectSec1Para mont text-sm pt-3 border-t-4 border-[#2925A9] sm:hidden text-center"
+          >
+           Contact CIMA Concrete today to schedule your <br />
+            free estimate and discuss your next project <br />
+            with our professional team.
+          </p>
+          <div class="flex flex-col gap-4 mont">
+              <div class="contactLeftInfo flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerPhone.svg" alt="" class="w-5" />
+                <p>(831) 431-3896</p>
+              </div>
+              <div class="contactLeftInfo flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerEmail.svg" alt="" class="w-5" />
+                <p>info@yourdomain.com</p>
+              </div>
+              <div class="contactLeftInfo flex items-center gap-2 max-sm:flex-col">
+                <img
+                  src="./assets/svgs/footerLocation.svg"
+                  alt=""
+                  class="w-5"
+                />
+                <p>Santa Cruz, CA & Surrounding Areas</p>
+              </div>
+              <div class="contactLeftInfo flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerClock.svg" alt="" class="w-5" />
+                <p> Monday – Friday: 8:00 AM – 4:00 PM <br>
+                     Saturday: 8:00 AM – 12:00 PM</p>
+              </div>
+          </div>
+        </div>
+        <div 
+          style="perspective: 1000px;"
+        class="w-full sm:w-1/2 sm:p-2 flex justify-center">
+          <form
+            action=""
+            class="w-full sm:w-[80%] backdrop-blur-sm bg-white/20 rounded-3xl py-6 sm:py-16 px-4 sm:px-8 flex flex-col text-xs xs:text-sm gap-2 xs:gap-4 items-center"
+          >
+            <h2
+              class="footerFormHeading w-[70%] sm:w-[60%] text-center text-lg xs:text-2xl sm:text-3xl text-white"
+            >
+              Get Your
+              <span class="font-bold text-[#1148A9]">Free Estimate Today!</span>
+            </h2>
+            <div class="formInputField flex flex-col xs:gap-1 w-full">
+              <label for="name" class="text-[#1148A9]"> Full Name </label>
+              <input
+                type="text"
+                name="name"
+                class="py-2 px-2 border-b-4 border-[#1148A9] bg-transparent text-[#1148A9] outline-none"
+              />
+            </div>
+            <div class="formInputField flex flex-col xs:gap-1 w-full">
+              <label for="name" class="text-[#1148A9]"> Phone Number </label>
+              <input
+                type="text"
+                name="number"
+                class="py-2 px-2 border-b-4 border-[#1148A9] bg-transparent text-[#1148A9] outline-none"
+              />
+            </div>
+            <div class="formInputField flex flex-col xs:gap-1 w-full">
+              <label for="name" class="text-[#1148A9]"> Email </label>
+              <input
+                type="email"
+                name="email"
+                class="py-2 px-2 border-b-4 border-[#1148A9] bg-transparent text-[#1148A9] outline-none"
+              />
+            </div>
+            <div class="formInputField flex flex-col xs:gap-1 w-full">
+              <label for="message" class="text-[#1148A9]"> Message </label>
+              <textarea
+                name="message"
+                rows="4"
+                class="py-2 px-2 border-b-4 border-[#1148A9] bg-transparent text-[#1148A9] outline-none resize-none"
+              ></textarea>
+            </div>
+           <div class="footerFormBtn">
+  <button
+  class="px-6 py-4 mt-4 font-bold max-sm:text-sm text-white rounded-xl 
+  bg-gradient-to-r from-[#1148A9] to-[#2E6DE0] 
+  transition-all duration-200 ease-out 
+  hover:-translate-y-2 
+  hover:shadow-[0_10px_35px_rgba(17,72,169,0.45),0_0_25px_rgba(17,72,169,0.6)] 
+  active:translate-y-0"
+>
+  Request a Free Quote
+</button>
+</div>
+          </form>
+        </div>
+      </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./contactAnimation.js"></script>
+    <script src="./common.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main w-full h-full overflow-hidden">
+      <!-- MENU -->
+      <div
+        id="menu"
+        class="sm:hidden w-full h-screen bg-[#023181] fixed top-0 left-0 z-[999] px-4 py-6 flex flex-col gap-10 justify-between opacity-0 -translate-y-full transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+      >
+        <div class="w-full flex items-center justify-between">
+          <a href="./home.html">
+            <img src="./assets/images/footerLogo.png" alt="" class="w-44" />
+          </a>
+          <img
+            id="menuClose"
+            src="./assets/svgs/crossIcon.svg"
+            alt=""
+            class="w-9"
+          />
+        </div>
+        <div
+          class="mobileMenuHeader flex flex-col items-center text-white/50 text-[1.8rem] font-extrabold gap-5"
+        >
+          <a href="./residential.html">Residential Cleaning</a>
+          <a href="./commercial.html">Commercial Cleaning</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./about.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="flex items-center gap-5 max-sm:flex-col">
+          <button
+            class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#E41B38] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+          >
+            Call us (831) 431-3896
+          </button>
+          <a href="./contact.html">
+            <button
+              class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#E41B38] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+            >
+              Request a Free Estimate
+              <img src="./assets/svgs/righty.svg" alt="" class="w-3" />
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- HEADER -->
+      <div
+        class="z-[99] fixed top-0 left-0 w-full flex items-center gap-10 px-4 sm:px-10 py-6 max-sm:justify-between"
+      >
+        <a href="./home.html" class="headerLogo">
+          <img src="./assets/images/logo.png" alt="" class="w-40 sm:w-52" />
+        </a>
+        <div
+          class="headerMenu flex items-center gap-5 font-semibold text-sm max-sm:hidden"
+        >
+          <a href="./residential.html" class="hover:text-[#1148A9]">
+            Residential Cleaning</a
+          >
+          <a href="./commercial.html" class="hover:text-[#1148A9]">
+            Commercial Cleaning
+          </a>
+          <a href="./gallery.html" class="hover:text-[#1148A9]"> Gallery</a>
+          <a href="./about.html" class="hover:text-[#1148A9]"> About Us</a>
+          <a href="./contact.html" class="hover:text-[#1148A9]"> Contact</a>
+        </div>
+        <img
+          id="menuOpen"
+          src="./assets/svgs/hamburger.svg"
+          alt=""
+          class="sm:hidden w-10"
+        />
+      </div>
+      <!-- SECTION 1 -->
+      <div
+        id="section1Trigger"
+        class="w-full min-h-screen bg-gradient-to-b from-[#FFFFFF] to-[#CCE3FF] flex overflow-x-hidden max-sm:flex-col"
+      >
+        <div
+          class="relative w-full sm:w-1/2 flex flex-col gap-5 sm:gap-8 sm:whitespace-nowrap pb-20 sm:pb-36 pt-40 sm:pt-60 sm:pl-12 max-sm:px-4 max-sm:items-center"
+        >
+          <img
+            src="./assets/images/leftDirectArrow.png"
+            alt=""
+            class="section1ArrowRight absolute top-36 -right-10 max-sm:right-0 max-sm:w-20 max-sm:top-28"
+          />
+          <img
+            src="./assets/images/RightDirectArrow.png"
+            alt=""
+            class="section1ArrowLeft absolute bottom-10 max-sm:bottom-0 left-0 max-sm:w-20"
+          />
+          <h1
+            class="section1Heading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+          >
+            Commercial Cleaning <br />
+            Solutions for <br />
+            <span class="text-[#1148a9]">Professional Spaces</span>
+          </h1>
+          <h1
+            class="section1Heading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+          >
+            Commercial Cleaning Solutions for
+            <span class="text-[#1148a9]">Professional Spaces</span>
+          </h1>
+          <p
+            class="section1ParaBig text-[1.2rem] 2xl:text-[1.4rem] font-semibold max-sm:hidden"
+          >
+            Reliable commercial cleaning services that help maintain <br />
+            a clean, safe, and professional environment. Customized <br />
+            solutions for offices, buildings, and commercial properties <br />
+            of all sizes.
+          </p>
+          <p
+            class="section1ParaBig text-base font-semibold text-center sm:hidden"
+          >
+            Reliable commercial cleaning services that help maintain a clean,
+            safe, and professional environment. Customized solutions for
+            offices, buildings, and commercial properties of all sizes.
+          </p>
+          <div class="flex items-center gap-5 max-sm:flex-col">
+            <a href="./contact.html" class="section1Btn">
+              <button
+                class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#1148A9] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+              >
+                Request a Free Estimate
+                <img src="./assets/svgs/righty.svg" alt="" class="w-4" />
+              </button>
+            </a>
+            <div class="section1Btn">
+              <button
+                class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#1148A9] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+              >
+                Call us (831) 431-3896
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 relative flex">
+          <img
+            src="./assets/images/commerceiclaServiceSec1RightImage.png"
+            alt=""
+            class="section1RightImage w-full h-full object-cover overflow-visible translate-x-16 max-sm:hidden"
+          />
+          <img
+            src="./assets/images/commerceiclaServiceSec1RightImageMobile.png"
+            alt=""
+            class="section1RightImage w-full sm:hidden"
+          />
+          <img
+            src="./assets/images/commerceiclaServiceSec1RightImageSmall.png"
+            alt=""
+            class="section1RightImageSmall absolute bottom-0 -left-2 sm:-left-10 max-sm:w-[60%]"
+          />
+        </div>
+      </div>
+      <!-- SECTION Marque -->
+      <div id="sectionMarqueTrigger" class="w-full">
+        <form
+          action=""
+          class="w-[90%] sm:w-[80%] py-10 bg-[#E41B38] rounded-lg flex justify-between gap-5 sm:gap-10 px-2 sm:px-10 max-sm:flex-col max-sm:items-center -translate-y-5 mx-auto"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="max-sm:w-full flex-1 py-3 sm:py-2 px-4 text-sm sm:text-base 2xl:text-lg placeholder:text-[#000000] rounded-lg"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="max-sm:w-full flex-1 py-3 sm:py-2 px-4 text-sm sm:text-base 2xl:text-lg placeholder:text-[#000000] rounded-lg"
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            rows="1"
+            class="max-sm:w-full flex-1 py-3 sm:py-2 px-4 text-sm sm:text-base 2xl:text-lg placeholder:text-[#000000] rounded-lg resize-none"
+          ></textarea>
+          <button
+            class="max-sm:w-[80%] flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md bg-[#1148A9] font-bold text-[#ffffff] hover:text-white text-center hover:shadow-2xl flex justify-center"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <!-- SECTION 2 -->
+      <div id="section2Trigger" class="relative w-full min-h-screen">
+        <img
+          src="./assets/images/cloudUpper.png"
+          alt=""
+          class="w-full max-sm:hidden"
+        />
+        <img
+          src="./assets/images/cloudeUppeMobile.png"
+          alt=""
+          class="w-full sm:hidden"
+        />
+        <div class="relative w-full flex bg-[#CBE3FF] max-sm:flex-col-reverse">
+          <div
+            class="w-full sm:w-1/2 py-5 flex flex-col items-end justify-between text-[#000000] max-sm:px-4 max-sm:gap-3"
+          >
+            <div
+              class="section2CleanCard sm:translate-x-20 flex flex-col gap-2 sm:gap-1 max-sm:px-5 sm:pl-4 sm:pr-10 py-3 rounded-xl bg-[#FFFFFF] w-full sm:w-fit"
+            >
+              <h2 class="text-3xl 2xl:text-4xl font-black max-sm:hidden">
+                Office Cleaning
+              </h2>
+              <h2 class="text-xl font-black sm:hidden text-center">
+                Office Cleaning
+              </h2>
+              <p class="text-base 2xl:text-lg max-sm:hidden">
+                Clean, productive workspaces for <br />
+                your team and visitors.
+              </p>
+              <p class="text-sm sm:hidden text-center">
+                Clean, productive workspaces for your team and visitors.
+              </p>
+            </div>
+            <div
+              class="section2CleanCard sm:-translate-x-10 flex flex-col gap-2 sm:gap-1 max-sm:px-5 sm:pl-4 sm:pr-10 py-3 rounded-xl bg-[#FFFFFF] w-full sm:w-fit"
+            >
+              <h2 class="text-3xl 2xl:text-4xl font-black max-sm:hidden">
+                Post-Construction <br> Cleaning
+              </h2>
+              <h2 class="text-xl font-black sm:hidden text-center">
+                Post-Construction Cleaning
+              </h2>
+              <p class="text-base 2xl:text-lg max-sm:hidden">
+                Final cleanup to make newly built or <br />
+                renovated spaces move-in ready.
+              </p>
+              <p class="text-sm sm:hidden text-center">
+                Final cleanup to make newly built or renovated spaces move-in
+                ready.
+              </p>
+            </div>
+            <div
+              class="section2CleanCard sm:-translate-x-10 flex flex-col gap-2 sm:gap-1 max-sm:px-5 sm:pl-4 sm:pr-10 py-3 rounded-xl bg-[#FFFFFF] w-full sm:w-fit"
+            >
+              <h2 class="text-3xl 2xl:text-4xl font-black max-sm:hidden">
+                Pressure Washing
+              </h2>
+              <h2 class="text-xl font-black sm:hidden text-center">
+                Pressure Washing
+              </h2>
+              <p class="text-base 2xl:text-lg max-sm:hidden">
+                Restore exterior surfaces with <br />
+                powerful, professional washing.
+              </p>
+              <p class="text-sm sm:hidden text-center">
+                Restore exterior surfaces with powerful, professional washing.
+              </p>
+            </div>
+            <div
+              class="section2CleanCard sm:translate-x-20 flex flex-col gap-2 sm:gap-1 max-sm:px-5 sm:pl-4 sm:pr-10 py-3 rounded-xl bg-[#FFFFFF] w-full sm:w-fit"
+            >
+              <h2 class="text-3xl 2xl:text-4xl font-black max-sm:hidden">
+                Gutter Cleaning
+              </h2>
+              <h2 class="text-xl font-black sm:hidden text-center">
+                Gutter Cleaning
+              </h2>
+              <p class="text-base 2xl:text-lg max-sm:hidden">
+                Clear gutters that protect your <br />
+                property from water damage.
+              </p>
+              <p class="text-sm sm:hidden text-center">
+                Clear gutters that protect your property from water damage.
+              </p>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 max-sm:px-4">
+            <img
+              src="./assets/images/service2sec2Right.png"
+              alt=""
+              class="section2LeftImage max-sm:hidden"
+            />
+            <img
+              src="./assets/images/commercialImageMobile.png"
+              alt=""
+              class="section2LeftImage sm:hidden"
+            />
+          </div>
+        </div>
+        <img
+          src="./assets/images/cloudDown.png"
+          alt=""
+          class="w-full max-sm:hidden"
+        />
+        <img
+          src="./assets/images/cloudDownMobile.png"
+          alt=""
+          class="w-full sm:hidden"
+        />
+        <img
+          src="./assets/images/bubbleLeftservice-2.png"
+          alt=""
+          class="section2Bubbles absolute top-0 left-0 w-[25%] max-sm:hidden"
+        />
+        <img
+          src="./assets/images/arrowRightDown.png"
+          alt=""
+          class="section2RightArrow absolute bottom-60 right-0 w-[20%] max-sm:hidden"
+        />
+      </div>
+       <!-- SECTION 3 -->
+     <div 
+      id="section3Trigger"
+      class="w-full min-h-screen ">
+              <div class="w-full flex flex-col sm:flex-row items-stretch">
+        <div class="w-full sm:w-[50%] ">
+          <img src="./assets/images/bannertopimg.png" alt=""
+          class="section3LeftImage origin-bottom" />
+        </div>
+        <div class="w-full sm:w-[50%] flex flex-col gap-4 sm:gap-16 pt-4 sm:pt-20">
+          <h1
+            class="section3Heading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold text-center sm:text-start">
+            <span class="text-[#E41B38]">Flexible </span>Cleaning Schedules
+          </h1>
+          <div>
+            <div class="flex flex-col sm:flex-row gap-5 items-start max-sm:items-center">
+              <img class="section3Icon w-[20%] sm:w-[8%]" src="./assets/svgs/Group 16.svg" alt="" />
+              <div class="flex flex-col">
+                <h1 class="section3SubHeading text-xl sm:text-3xl 2xl:text-4xl font-black text-center sm:text-start">Weekly</h1>
+                <p class="section3Para sm:text-base 2xl:text-lg text-center sm:text-start">Consistent cleaning for busy homes and <br> active businesses.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col sm:flex-row gap-5 items-start max-sm:items-center">
+              <img class="section3Icon w-[20%] sm:w-[8%]" src="./assets/svgs/Group 17.svg" alt="" />
+              <div class="flex flex-col">
+                <h1 class="section3SubHeading text-xl sm:text-3xl 2xl:text-4xl font-black text-center sm:text-start">Monthly</h1>
+                <p class="section3Para sm:text-base 2xl:text-lg text-center sm:text-start">Scheduled deep cleaning to maintain long- <br> term cleanliness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- BANNER -->
+      <div
+        id="bannerTrigger"
+        class="relative w-full px-4 sm:px-24 2xl:px-40 max-sm:pt-5 max-sm:pb-16 pb-12"
+      >
+       <img
+          src="./assets/images/RightDirectArrow.png"
+          alt=""
+          class="bannerArrowLeft w-[30%] sm:w-[15%] absolute bottom-0 left-0"
+        />
+        <div
+          class="relative bg-[#E41B38] text-white rounded-[30px] flex justify-between max-sm:flex-col max-sm:items-center"
+        >
+          <div
+            class="w-full sm:w-1/2 flex flex-col gap-5 sm:gap-8 sm:pl-10 py-5 sm:py-10 2xl:py-12"
+          >
+            <h2
+              class="bannerHeading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+            >
+              Ready for a <br />
+              Cleaner, <br />
+              Healthier Space?
+            </h2>
+            <h2
+              class="bannerHeading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+            >
+              Ready for a Cleaner, Healthier Space?
+            </h2>
+            <p class="bannerPara text-base 2xl:text-[1.1rem] max-sm:hidden">
+              Contact 831 Cleaning Services today and <br />
+              experience professional cleaning done right.
+            </p>
+            <p class="bannerPara text-sm text-center sm:hidden">
+              Contact 831 Cleaning Services today and experience professional
+              cleaning done right.
+            </p>
+            <div class="flex items-center gap-5 max-sm:flex-col mt-2">
+              <a href="./contact.html" class="section5Btn">
+                <button
+                  class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-white hover:text-white hover:bg-[#1148A9] items-center border-2 border-white hover:border-transparent hover:shadow-2xl transition duration-150"
+                >
+                  Request a Free Estimate
+                  <img src="./assets/svgs/righty.svg" alt="" class="w-4" />
+                </button>
+              </a>
+              <div class="section5Btn">
+                <button
+                  class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-white hover:text-white hover:bg-[#1148A9] items-center border-2 border-white hover:border-transparent hover:shadow-2xl transition duration-150"
+                >
+                  Call us (831) 431-3896
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 relative">
+            <img
+              src="./assets/images/bannerDrops.png"
+              alt=""
+              class="absolute -bottom-32 sm:-bottom-52 -right-10 sm:-right-60 w-[70%]"
+            />
+            <img
+              src="./assets/images/bannerRightImage.png"
+              alt=""
+              class="bannerRightBigImage sm:absolute sm:-top-16 sm:-right-10"
+            />
+            <img
+              src="./assets/images/bannerRightImageSmall.png"
+              alt=""
+              class="bannerRightsmallImage absolute -bottom-10 sm:-bottom-20 -right-5 sm:-right-24 max-sm:w-[60%]"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- RECENT PROJECT -->
+      <div
+        id="recentProjectTrigger"
+        class="w-full pt-12 sm:pt-24 sm:pl-20 flex flex-col gap-8 sm:gap-12"
+      >
+        <h2
+          class="recentProjectHeading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+        >
+          Recent Projects
+        </h2>
+        <h2
+          class="recentProjectHeading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+        >
+          Recent Projects
+        </h2>
+
+        <div
+          class="w-full flex items-center gap-10 max-sm:px-4 whitespace-nowrap overflow-x-auto hide-scrollbar"
+        >
+          <div
+            class="w-full shrink-0 sm:w-[28%] h-[68dvh] sm:h-[80dvh] 2xl:h-[75dvh] bg-red-400 rounded-[30px] overflow-hidden"
+          >
+            <img
+              src="./assets/images/recentProjectCard1.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="w-full shrink-0 sm:w-[28%] h-[68dvh] sm:h-[80dvh] 2xl:h-[75dvh] bg-red-400 rounded-[30px] overflow-hidden"
+          >
+            <img
+              src="./assets/images/recentProjectCard2.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="w-full shrink-0 sm:w-[28%] h-[68dvh] sm:h-[80dvh] 2xl:h-[75dvh] bg-red-400 rounded-[30px] overflow-hidden"
+          >
+            <img
+              src="./assets/images/recentProjectCard3.jpeg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="w-full shrink-0 sm:w-[28%] h-[68dvh] sm:h-[80dvh] 2xl:h-[75dvh] bg-red-400 rounded-[30px] overflow-hidden"
+          >
+            <img
+              src="./assets/images/recentProjectCard4.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- REVIEWS -->
+      <div
+        id="reviewsTrigger"
+        class="w-full h-fit pt-10 sm:pt-20 px-4 sm:px-24 flex flex-col gap-10 pb-10 sm:pb-28"
+      >
+        <!-- reviwstop -->
+        <div class="flex flex-col gap-2 max-sm:items-center">
+          <h2
+            class="reviewsHeading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+          >
+            What Our Clients Are Saying
+          </h2>
+          <h2
+            class="reviewsHeading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+          >
+            What Our Clients Are Saying
+          </h2>
+
+          <div
+            class="reviewsPara flex items-center justify-between w-fit gap-2"
+          >
+            <img
+              class="w-20 sm:w-28"
+              src="./assets/svgs/reviewStars.svg"
+              alt=""
+            />
+
+            <p class="text-base 2xl:text-[1.1rem] max-sm:hidden">
+              5.0 rating of 12 reviews
+            </p>
+            <p class="text-sm text-center sm:hidden">
+              5.0 rating of 12 reviews
+            </p>
+          </div>
+        </div>
+        <!-- reviewsbottom -->
+        <div
+          class="reviewsbottom w-full flex flex-col max-sm:gap-5 sm:flex-row justify-evenly 2xl:justify-center 2xl:gap-10 items-center sm:items-stretch mont"
+        >
+          <!-- review1 -->
+          <div
+            class="reviewCard review1 bg-[#FFF] w-full sm:w-[30%] 2xl:w-[29%] rounded-2xl flex flex-col items-center justify-between px-5 py-6 gap-2 sm:gap-3 2xl:gap-4 border border-[#56545B]"
+          >
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/reviewStars.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/googleReview.svg" alt="" />
+            </div>
+            <p
+              class="w-full h-fit text-sm sm:text-base 2xl:text-base 3xl:text-2xl text-[#020101]"
+            >
+              The best service I’ve received in a long time! The team was
+              incredibly responsive, and their expertise was evident in the
+              final product. There was a small miscommunication initially, but
+              they quickly resolved it. I would definitely work with them again.
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2"
+            >
+              <h1
+                class="font-semibold text-lg sm:text-xl 2xl:text-base 3xl:text-2xl text-[#020101]"
+              >
+                Isabella Turner
+              </h1>
+              <p
+                class="text-[#3535FD] text-sm sm:text-base 2xl:text-base 3xl:text-2xl"
+              >
+                Project Manager
+              </p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/svgs/user.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- review2 -->
+          <div
+            style="background-image: url(assets/images/reviewperson.png)"
+            class="reviewCard review2 relative w-full sm:w-[30%] 2xl:w-[27%] max-sm:h-[380px] bg-[#F9FAFB] rounded-2xl flex flex-col items-center justify-end px-5 py-6 gap-2 sm:gap-3 bg-img bg-cover bg-center flex-shrink-0 2xl:gap-5 border border-[#56545B] bg-gradient-to-t from-red-800 to-transparent"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/30 rounded-2xl to-transparent"
+            ></div>
+            <div class="flex w-full justify-between">
+              <div
+                class="w-full h-fit flex flex-col justify-between items-start gap-4 z-10"
+              >
+                <img class="w-28" src="./assets/svgs/reviewStars.svg" alt="" />
+
+                <div class="flex gap-3 items-center justify-between">
+                  <img
+                    class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                    src="./assets/svgs/user.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <h1
+                      class="text-[#FFFFFF] font-semibold text-lg sm:text-xl 2xl:text-base 3xl:text-2xl"
+                    >
+                      Henry Foster
+                    </h1>
+                    <p
+                      class="text-[#FFFFFF] text-sm sm:text-base 2xl:text-base 3xl:text-2xl"
+                    >
+                      Project Manager
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="w-8 mt-2"
+                src="./assets/svgs/googleReview.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- review3 -->
+          <div
+            class="reviewCard review3 bg-white w-full sm:w-[30%] 2xl:w-[29%] rounded-2xl flex flex-col items-center justify-between px-5 py-6 gap-2 sm:gap-3 2xl:gap-4 border border-[#56545B]"
+          >
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/reviewStars.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/googleReview.svg" alt="" />
+            </div>
+            <p
+              class="w-full h-fit text-sm sm:text-base 2xl:text-base 3xl:text-2xl text-[#020101]"
+            >
+              The marketing campaign they created for us was outstanding, and we
+              saw significant engagement. However, I wish they had provided more
+              frequent updates during the process. Overall, great work! Highly
+              recommended!
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2"
+            >
+              <h1
+                class="font-semibold text-lg sm:text-xl 2xl:text-base 3xl:text-2xl text-[#020101]"
+              >
+                Nathan Scott
+              </h1>
+              <p
+                class="text-[#3535FD] text-sm sm:text-base 2xl:text-base 3xl:text-2xl"
+              >
+                CEO, Scott Enterprises
+              </p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/svgs/user.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+         <!-- FOOTER -->
+      <div id="footerTrigger" class="w-full">
+        <div
+          class="w-full bg-[#023181] pt-10 sm:pt-20 pb-5 sm:pb-10 px-4 sm:px-32 flex flex-col gap-5 sm:gap-16 text-white"
+        >
+          <div
+            class="flex items-center justify-between max-sm:flex-col max-sm:gap-3"
+          >
+            <div
+              class="w-full sm:w-[30%] flex flex-col items-center gap-2 sm:gap-4 sm:whitespace-nowrap"
+            >
+              <img
+                src="./assets/images/footerLogo.png"
+                alt=""
+                class="footerLogo w-[80%] max-sm:w-[60%]"
+              />
+              <p
+                class="footerPara mont sm:text-[1rem] 2xl:text-[1.2rem] max-sm:hidden text-center"
+              >
+                Professional cleaning solutions tailored <br />
+                to your home and business. Trusted for <br />
+                quality, reliability, and attention to detail <br />
+                for over 15 years.
+              </p>
+              <p class="footerPara mont text-sm sm:hidden text-center">
+                Professional cleaning solutions tailored to your home and
+                business. Trusted for quality, reliability, and attention to
+                detail for over 15 years.
+              </p>
+            </div>
+            <div class="w-full sm:w-[30%] flex flex-col items-center">
+              <div
+                class="flex flex-col gap-2 text-base 2xl:text-lg mont max-sm:hidden"
+              >
+                <h2 class="footerMiddle font-extrabold">Quick Links</h2>
+                <a class="footerMiddle" href="./home.html">Home</a>
+                <a class="footerMiddle" href="./residential.html">Residential Cleaning</a>
+                <a class="footerMiddle" href="./commercial.html">Commercial Cleaning </a>
+                <a class="footerMiddle" href="./gallery.html">Gallery</a>
+                <a class="footerMiddle" href="./about.html">About Us</a>
+                <a class="footerMiddle" href="./contact.html">Contact</a>
+              </div>
+            </div>
+            <div
+              class="w-full sm:w-[30%] flex flex-col text-base 2xl:text-lg mont gap-2 max-sm:items-center max-sm:text-center"
+            >
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerPhone.svg" alt="" class="w-5" />
+                <p>(831) 431-3896</p>
+              </div>
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerEmail.svg" alt="" class="w-5" />
+                <p>info@yourdomain.com</p>
+              </div>
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img
+                  src="./assets/svgs/footerLocation.svg"
+                  alt=""
+                  class="w-5"
+                />
+                <p>Santa Cruz, CA & Surrounding Areas</p>
+              </div>
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerClock.svg" alt="" class="w-5" />
+                <p> Monday – Friday: 8:00 AM – 4:00 PM <br>
+                   Saturday: 8:00 AM – 12:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between text-xs mont max-sm:flex-col max-sm:text-center max-sm:gap-4 max-sm:mt-5\ sm:px-20"
+          >
+            <p>Privacy Policy | Your Privacy Choices</p>
+            <p>
+              © 2025 CIMA CONCRETE. All Rights Reserved. Web Design By
+              <a href="https://brandedstrong.com/">Branded Strong</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./commercialAniamtion.js"></script>
+    <script src="./common.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

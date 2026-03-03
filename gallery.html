@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main w-full h-full overflow-hidden">
+      <!-- MENU -->
+      <div
+        id="menu"
+        class="sm:hidden w-full h-screen bg-[#023181] fixed top-0 left-0 z-[999] px-4 py-6 flex flex-col gap-10 justify-between opacity-0 -translate-y-full transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
+      >
+        <div class="w-full flex items-center justify-between">
+          <a href="./home.html">
+            <img src="./assets/images/footerLogo.png" alt="" class="w-44" />
+          </a>
+          <img
+            id="menuClose"
+            src="./assets/svgs/crossIcon.svg"
+            alt=""
+            class="w-9"
+          />
+        </div>
+        <div
+          class="mobileMenuHeader flex flex-col items-center text-white/50 text-[1.8rem] font-extrabold gap-5"
+        >
+          <a href="./residential.html">Residential Cleaning</a>
+          <a href="./commercial.html">Commercial Cleaning</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./about.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="flex items-center gap-5 max-sm:flex-col">
+          <button
+            class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#E41B38] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+          >
+            Call us (831) 431-3896
+          </button>
+          <a href="./contact.html">
+            <button
+              class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#E41B38] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+            >
+              Request a Free Estimate
+              <img src="./assets/svgs/righty.svg" alt="" class="w-3" />
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- HEADER -->
+      <div
+        class="z-[99] fixed top-0 left-0 w-full flex items-center gap-10 px-4 sm:px-10 py-6 max-sm:justify-between"
+      >
+        <a href="./home.html" class="headerLogo">
+          <img src="./assets/images/logo.png" alt="" class="w-40 sm:w-52" />
+        </a>
+        <div
+          class="headerMenu flex items-center gap-5 font-semibold text-sm max-sm:hidden"
+        >
+          <a href="./residential.html" class="hover:text-[#1148A9]">
+            Residential Cleaning</a
+          >
+          <a href="./commercial.html" class="hover:text-[#1148A9]">
+            Commercial Cleaning
+          </a>
+          <a href="./gallery.html" class="hover:text-[#1148A9]"> Gallery</a>
+          <a href="./about.html" class="hover:text-[#1148A9]"> About Us</a>
+          <a href="./contact.html" class="hover:text-[#1148A9]"> Contact</a>
+        </div>
+        <img
+          id="menuOpen"
+          src="./assets/svgs/hamburger.svg"
+          alt=""
+          class="sm:hidden w-10"
+        />
+      </div>
+      <!-- SECTION 1 -->
+      <div
+        id="section1Trigger"
+        class="w-full min-h-screen bg-gradient-to-b from-[#FFFFFF] to-[#CCE3FF] flex overflow-x-hidden max-sm:flex-col"
+      >
+        <div
+          class="relative w-full sm:w-1/2 flex flex-col gap-5 sm:gap-8 sm:whitespace-nowrap pb-20 sm:pb-36 pt-40 sm:pt-60 sm:pl-12 max-sm:px-4 max-sm:items-center"
+        >
+          <img
+            src="./assets/images/leftDirectArrow.png"
+            alt=""
+            class="section1ArrowRight absolute top-36 -right-10 max-sm:right-0 max-sm:w-20 max-sm:top-28"
+          />
+          <img
+            src="./assets/images/RightDirectArrow.png"
+            alt=""
+            class="section1ArrowLeft absolute bottom-10 max-sm:bottom-0 left-0 max-sm:w-20"
+          />
+          <h1
+            class="section1Heading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+          >
+            Our Portfolio: Witness <br />
+
+            <span class="text-[#1148a9]">the Excellence <br /></span>
+            in Cleaning
+          </h1>
+          <h1
+            class="section1Heading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+          >
+            Our Portfolio: Witness
+
+            <span class="text-[#1148a9]">the Excellence </span>
+            in Cleaning
+          </h1>
+          <p class="section1Para text-[0.9rem] 2xl:text-[1.1rem] max-sm:hidden">
+            At <span class="font-semibold">831 Cleaning Services,</span> we
+            believe our work speaks louder than <br> words. Our gallery showcases the
+            transformation of spaces from <br> cluttered job sites to pristine
+            environments. Explore our recent <br> projects to see the high-quality
+            cleaning solutions and meticulous <br> attention to detail that make
+            every home and business we service <br> truly shine.
+          </p>
+          <p class="section1Para text-sm text-center sm:hidden">
+            At <span class="font-semibold">831 Cleaning Services,</span> we
+            believe our work speaks louder than words. Our gallery showcases the
+            transformation of spaces—from cluttered job sites to pristine
+            environments. Explore our recent projects to see the high-quality
+            cleaning solutions and meticulous attention to detail that make
+            every home and business we service truly shine.
+          </p>
+          <div class="flex items-center gap-5 max-sm:flex-col">
+            <a href="./contact.html" class="section1Btn">
+              <button
+                class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#1148A9] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+              >
+                Request a Free Estimate
+                <img src="./assets/svgs/righty.svg" alt="" class="w-4" />
+              </button>
+            </a>
+            <div class="section1Btn">
+              <button
+                class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#1148A9] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+              >
+                Call us (831) 431-3896
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 relative flex">
+          <img
+            src="./assets/images/aboutsec1RightImage.png"
+            alt=""
+            class="section1RightImage w-full h-full object-cover overflow-visible translate-x-28 max-sm:hidden"
+          />
+          <img
+            src="./assets/images/aboutsec1RightImageMobile.png"
+            alt=""
+            class="section1RightImage w-full sm:hidden"
+          />
+          <img
+            src="./assets/images/aboutsec1RightImageSmall.png"
+            alt=""
+            class="section1RightImageSmall absolute bottom-0 -left-2 sm:-left-20 max-sm:w-[60%]"
+          />
+        </div>
+      </div>
+      <!-- SECTION 2-->
+      <div id="section2Trigger" class="py-5 sm:py-10 flex flex-col gap-5 sm:gap-10 px-4 sm:px-10 items-center">
+         <h1
+            class="section2Heading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+          >
+           Our Gallery
+          </h1>
+           <h1
+            class="section2Heading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+          >
+           Our Gallery
+          </h1>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <!-- Image 1 - Tall on desktop, normal on mobile -->
+      <div class="galleryCard md:col-span-1 md:row-span-2">
+        <div class="group relative overflow-hidden rounded-lg h-80 md:h-full shadow-lg hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454489.jpg?t=st=1771795741~exp=1771799341~hmac=ec90a209dfaf416933b7f532b7ba019669694e610efe6d56a2abb7276b49f51d&w=2000" 
+            alt="Gallery image 1"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="galleryCard md:col-span-1 md:row-span-1">
+        <div class="group relative overflow-hidden rounded-lg h-80 md:h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454489.jpg?t=st=1771795741~exp=1771799341~hmac=ec90a209dfaf416933b7f532b7ba019669694e610efe6d56a2abb7276b49f51d&w=2000" 
+            alt="Gallery image 2"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Image 3 - Wide on desktop, normal on mobile -->
+      <div class="galleryCard md:col-span-2 md:row-span-1">
+        <div class="group relative overflow-hidden rounded-lg h-80 md:h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454489.jpg?t=st=1771795741~exp=1771799341~hmac=ec90a209dfaf416933b7f532b7ba019669694e610efe6d56a2abb7276b49f51d&w=2000" 
+            alt="Gallery image 3"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Image 4 -->
+      <div class="galleryCard md:col-span-1 md:row-span-1">
+        <div class="group relative overflow-hidden rounded-lg h-80 md:h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454489.jpg?t=st=1771795741~exp=1771799341~hmac=ec90a209dfaf416933b7f532b7ba019669694e610efe6d56a2abb7276b49f51d&w=2000" 
+            alt="Gallery image 4"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Image 5 - Wide on desktop, normal on mobile -->
+      <div class="galleryCard md:col-span-2 md:row-span-1">
+        <div class="group relative overflow-hidden rounded-lg h-80 md:h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454489.jpg?t=st=1771795741~exp=1771799341~hmac=ec90a209dfaf416933b7f532b7ba019669694e610efe6d56a2abb7276b49f51d&w=2000" 
+            alt="Gallery image 5"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Image 6 - Tall on desktop, normal on mobile -->
+      <div class="galleryCard md:col-span-1 md:row-span-2">
+        <div class="group relative overflow-hidden rounded-lg h-80 md:h-full shadow-lg hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454489.jpg?t=st=1771795741~exp=1771799341~hmac=ec90a209dfaf416933b7f532b7ba019669694e610efe6d56a2abb7276b49f51d&w=2000" 
+            alt="Gallery image 6"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Image 7 -->
+      <div class="galleryCard md:col-span-1 md:row-span-1">
+        <div class="group relative overflow-hidden rounded-lg h-80 md:h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454489.jpg?t=st=1771795741~exp=1771799341~hmac=ec90a209dfaf416933b7f532b7ba019669694e610efe6d56a2abb7276b49f51d&w=2000" 
+            alt="Gallery image 7"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Image 8 -->
+      <div class="galleryCard md:col-span-1 md:row-span-1">
+        <div class="group relative overflow-hidden rounded-lg h-80 md:h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454489.jpg?t=st=1771795741~exp=1771799341~hmac=ec90a209dfaf416933b7f532b7ba019669694e610efe6d56a2abb7276b49f51d&w=2000" 
+            alt="Gallery image 8"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+      <!-- Image 9 -->
+      <div class="galleryCard md:col-span-1 md:row-span-1">
+        <div class="group relative overflow-hidden rounded-lg h-80 md:h-64 shadow-lg hover:shadow-2xl transition-all duration-300">
+          <img 
+            src="https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454489.jpg?t=st=1771795741~exp=1771799341~hmac=ec90a209dfaf416933b7f532b7ba019669694e610efe6d56a2abb7276b49f51d&w=2000" 
+            alt="Gallery image 9"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          >
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+        </div>
+      </div>
+
+    </div>
+      </div>
+      <!-- FOOTER -->
+      <div id="footerTrigger" class="w-full">
+        <div
+          class="w-full bg-[#023181] pt-10 sm:pt-20 pb-5 sm:pb-10 px-4 sm:px-32 flex flex-col gap-5 sm:gap-16 text-white"
+        >
+          <div
+            class="flex items-center justify-between max-sm:flex-col max-sm:gap-3"
+          >
+            <div
+              class="w-full sm:w-[30%] flex flex-col items-center gap-2 sm:gap-4 sm:whitespace-nowrap"
+            >
+              <img
+                src="./assets/images/footerLogo.png"
+                alt=""
+                class="footerLogo w-[80%] max-sm:w-[60%]"
+              />
+              <p
+                class="footerPara mont sm:text-[1rem] 2xl:text-[1.2rem] max-sm:hidden text-center"
+              >
+                Professional cleaning solutions tailored <br />
+                to your home and business. Trusted for <br />
+                quality, reliability, and attention to detail <br />
+                for over 15 years.
+              </p>
+              <p class="footerPara mont text-sm sm:hidden text-center">
+                Professional cleaning solutions tailored to your home and
+                business. Trusted for quality, reliability, and attention to
+                detail for over 15 years.
+              </p>
+            </div>
+            <div class="w-full sm:w-[30%] flex flex-col items-center">
+              <div
+                class="flex flex-col gap-2 text-base 2xl:text-lg mont max-sm:hidden"
+              >
+                <h2 class="footerMiddle font-extrabold">Quick Links</h2>
+                <a class="footerMiddle" href="./home.html">Home</a>
+                <a class="footerMiddle" href="./residential.html">Residential Cleaning</a>
+                <a class="footerMiddle" href="./commercial.html">Commercial Cleaning </a>
+                <a class="footerMiddle" href="./gallery.html">Gallery</a>
+                <a class="footerMiddle" href="./about.html">About Us</a>
+                <a class="footerMiddle" href="./contact.html">Contact</a>
+              </div>
+            </div>
+            <div
+              class="w-full sm:w-[30%] flex flex-col text-base 2xl:text-lg mont gap-2 max-sm:items-center max-sm:text-center"
+            >
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerPhone.svg" alt="" class="w-5" />
+                <p>(831) 431-3896</p>
+              </div>
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerEmail.svg" alt="" class="w-5" />
+                <p>info@yourdomain.com</p>
+              </div>
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img
+                  src="./assets/svgs/footerLocation.svg"
+                  alt=""
+                  class="w-5"
+                />
+                <p>Santa Cruz, CA & Surrounding Areas</p>
+              </div>
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerClock.svg" alt="" class="w-5" />
+                <p> Monday – Friday: 8:00 AM – 4:00 PM <br>
+                   Saturday: 8:00 AM – 12:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between text-xs mont max-sm:flex-col max-sm:text-center max-sm:gap-4 max-sm:mt-5\ sm:px-20"
+          >
+            <p>Privacy Policy | Your Privacy Choices</p>
+            <p>
+              © 2025 CIMA CONCRETE. All Rights Reserved. Web Design By
+              <a href="https://brandedstrong.com/">Branded Strong</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./galleryAnimation.js"></script>
+    <script src="./common.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

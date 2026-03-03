@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main w-full h-full overflow-hidden">
+      <!-- MENU -->
+       <div 
+       id="menu"
+       class="sm:hidden w-full h-screen bg-[#023181] fixed top-0 left-0 z-[999] px-4 py-6
+       flex flex-col gap-10 justify-between
+       opacity-0 -translate-y-full
+  transition-all duration-500
+  ease-[cubic-bezier(0.34,1.56,0.64,1)]">
+      <div class="w-full flex items-center justify-between">
+        <a href="./home.html">
+          <img src="./assets/images/footerLogo.png" alt=""
+        class="w-44">
+        </a>
+        <img 
+        id="menuClose"
+        src="./assets/svgs/crossIcon.svg" alt=""
+        class="w-9">
+      </div>
+      <div class="mobileMenuHeader flex flex-col items-center text-white/50 text-[1.8rem] font-extrabold
+      gap-5">
+        <a href="./residential.html">Residential Cleaning</a>
+        <a href="./commercial.html">Commercial Cleaning</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+
+      </div>
+      <div class="flex items-center gap-5 max-sm:flex-col">
+              <button
+                class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#E41B38] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+              >
+                Call us (831) 431-3896
+              </button>
+            <a href="./contact.html">
+              <button
+                class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#E41B38] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+              >
+                Request a Free Estimate
+                <img src="./assets/svgs/righty.svg" alt="" class="w-3" />
+              </button>
+            </a>
+          </div>
+      </div>
+      <!-- HEADER -->
+      <div
+        class="z-[99] fixed top-0 left-0 w-full flex items-center gap-10 px-4 sm:px-10 py-6 max-sm:justify-between"
+      >
+        <a href="./home.html" class="headerLogo">
+          <img src="./assets/images/logo.png" alt="" class="w-40 sm:w-52" />
+        </a>
+        <div
+          class="headerMenu flex items-center gap-5 font-semibold text-sm max-sm:hidden"
+        >
+          <a
+            href="./residential.html"
+            class="hover:text-[#1148A9]"
+          >
+            Residential Cleaning</a
+          >
+          <a
+            href="./commercial.html"
+            class="hover:text-[#1148A9]"
+          >
+            Commercial Cleaning
+          </a>
+          <a
+            href="./gallery.html"
+            class="hover:text-[#1148A9]"
+          >
+            Gallery</a
+          >
+          <a
+            href="./about.html"
+            class="hover:text-[#1148A9]"
+          >
+            About Us</a
+          >
+          <a
+            href="./contact.html"
+            class="hover:text-[#1148A9]"
+          >
+            Contact</a
+          >
+        </div>
+        <img
+        id="menuOpen"
+        src="./assets/svgs/hamburger.svg" alt="" class="sm:hidden w-10" />
+      </div>
+      <!-- SECTION 1 -->
+      <div
+        id="section1Trigger"
+        class="w-full min-h-screen bg-gradient-to-b from-[#FFFFFF] to-[#CCE3FF] flex overflow-x-hidden max-sm:flex-col"
+      >
+        <div
+          class="relative w-full sm:w-1/2 flex flex-col gap-5 sm:gap-8 sm:whitespace-nowrap pb-20 sm:pb-36 pt-40 sm:pt-60 sm:pl-12 max-sm:px-4 max-sm:items-center"
+        >
+          <img
+            src="./assets/images/leftDirectArrow.png"
+            alt=""
+            class="section1ArrowRight absolute top-36 -right-10 max-sm:right-0 max-sm:w-20 max-sm:top-28"
+          />
+          <img
+            src="./assets/images/RightDirectArrow.png"
+            alt=""
+            class="section1ArrowLeft absolute bottom-10 max-sm:bottom-0 left-0 max-sm:w-20"
+          />
+          <h1
+            class="section1Heading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+          >
+            Professional
+            <span class="text-[#163C83]"
+              >Cleaning <br />
+              Solutions</span
+            >
+            for Homes & <br />
+            Businesses
+          </h1>
+          <h1
+            class="section1Heading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+          >
+            Professional
+            <span class="text-[#163C83]">Cleaning Solutions</span>
+            for Homes & Businesses
+          </h1>
+          <p
+            class="section1ParaBig text-[1.2rem] 2xl:text-[1.4rem] font-semibold max-sm:hidden"
+          >
+            Reliable residential and commercial cleaning services in <br />
+            Santa Cruz, CA — detailed, efficient, and trusted.
+          </p>
+          <p
+            class="section1ParaBig text-base font-semibold text-center sm:hidden"
+          >
+            Reliable residential and commercial cleaning services in Santa Cruz,
+            CA — detailed, efficient, and trusted.
+          </p>
+          <p class="section1Para text-[0.9rem] 2xl:text-[1.1rem] max-sm:hidden">
+            At <span class="font-semibold">831 Cleaning Services,</span> we
+            provide high-quality cleaning solutions
+            <br />
+            designed to keep your space spotless, healthy, and welcoming. From
+            routine <br />
+            house cleaning to specialized exterior and post-construction
+            services, we <br />
+            focus on results you can see and feel.
+          </p>
+          <p class="section1Para text-sm text-center sm:hidden">
+            At <span class="font-semibold">831 Cleaning Services,</span> we
+            provide high-quality cleaning solutions
+            <br />
+            designed to keep your space spotless, healthy, and welcoming. From
+            routine <br />
+            house cleaning to specialized exterior and post-construction
+            services, we <br />
+            focus on results you can see and feel.
+          </p>
+          <div class="flex items-center gap-5 max-sm:flex-col">
+            <a href="./contact.html" class="section1Btn">
+              <button
+                class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#1148A9] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+              >
+                Request a Free Estimate
+                <img src="./assets/svgs/righty.svg" alt="" class="w-4" />
+              </button>
+            </a>
+            <div class="section1Btn">
+              <button
+                class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#1148A9] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+              >
+                Call us (831) 431-3896
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 relative flex">
+          <img
+            src="./assets/images/homeSec1RightImage.png"
+            alt=""
+            class="section1RightImage w-full h-full object-cover overflow-visible translate-x-16 max-sm:hidden"
+          />
+          <img
+            src="./assets/images/homeSec1RightImageMobile.png"
+            alt=""
+            class="w-full sm:hidden"
+          />
+          <div
+            class="bullet absolute top-[10%] sm:top-[30%] left-5 sm:left-0 py-3 px-6 bg-[#E41B38A8]/60 text-white font-extrabold rounded-md text-sm sm:text-base 2xl:text-lg"
+          >
+            15 Years of Experience
+          </div>
+          <div
+            class="bullet absolute top-[45%] right-0 py-3 px-6 bg-[#E41B38A8]/60 text-white font-extrabold rounded-md text-sm sm:text-base 2xl:text-lg"
+          >
+            Licensed & Insured (#1083696)
+          </div>
+          <div
+            class="bullet absolute bottom-[10%] sm:bottom-[15%] left-2 sm:-left-10 py-3 px-12 bg-[#E41B38A8]/60 text-white font-extrabold rounded-md text-sm sm:text-base 2xl:text-lg"
+          >
+            Free Estimates
+          </div>
+        </div>
+      </div>
+      <!-- SECTION Marque -->
+      <div id="sectionMarqueTrigger" class="w-full">
+        <form
+          action=""
+          class="w-[90%] sm:w-[80%] py-10 bg-[#E41B38] rounded-lg flex justify-between gap-5 sm:gap-10 px-2 sm:px-10 max-sm:flex-col max-sm:items-center -translate-y-5 mx-auto"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="max-sm:w-full flex-1 py-3 sm:py-2 px-4 text-sm sm:text-base 2xl:text-lg placeholder:text-[#000000] rounded-lg"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="max-sm:w-full flex-1 py-3 sm:py-2 px-4 text-sm sm:text-base 2xl:text-lg placeholder:text-[#000000] rounded-lg"
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            rows="1"
+            class="max-sm:w-full flex-1 py-3 sm:py-2 px-4 text-sm sm:text-base 2xl:text-lg placeholder:text-[#000000] rounded-lg resize-none"
+          ></textarea>
+          <button
+            class="max-sm:w-[80%] flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md bg-[#1148A9] font-bold text-[#ffffff] hover:text-white text-center hover:shadow-2xl flex justify-center"
+          >
+            Submit
+          </button>
+        </form>
+        <div class="w-full overflow-hidden py-10 sm:py-16">
+          <div class="marquee whitespace-nowrap flex gap-10">
+            <img src="./assets/svgs/textBigOne.svg" alt="" />
+
+            <img src="./assets/svgs/textBigOne.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- SECTION 2 -->
+      <div
+        id="section2Trigger"
+        class="w-full bg-white px-4 sm:px-20 flex flex-col sm:flex-row items-stretch gap-10 sm:gap-8 py-5"
+      >
+        <!-- card1 -->
+        <div class="section2Card w-full sm:w-[25%] flex">
+          <div
+            class="relative pt-24 sm:pt-28 pb-3 px-5 gap-1 flex flex-col flex-1 items-center bg-[#D9D9D9]/50 backdrop-blur-[15px] shadow-[0_4px_15.4px_0_rgba(0,0,0,0.25)] rounded-xl hover:bg-[#E41B388C] group transition-all duration-300"
+          >
+            <span
+              class="card1image absolute -top-5 p-5 bg-[#D9D9D9] rounded-full group-hover:bg-[#D72032] transition-all duration-300 h-24 sm:h-28 w-24 sm:w-28 flex items-center justify-center"
+            >
+              <img
+                class="group-hover:hidden block transition-all duration-300 w-[80%]"
+                src="./assets/svgs/homesection2card1.svg"
+                alt=""
+              />
+              <img
+                class="hidden group-hover:block transition-all duration-300 w-[80%]"
+                src="./assets/svgs/homesection2card1 copy.svg"
+                alt=""
+              />
+            </span>
+            <h1
+              class="card1heading text-[#000000] font-extrabold text-lg sm:text-2xl group-hover:text-[#FFFFFF] transition-all duration-300 text-center"
+            >
+              House Cleaning
+            </h1>
+            <h1
+              class="card1subheading text-[#000000] font-medium text-sm sm:text-lg group-hover:text-[#FFFFFF] transition-all duration-300 text-center"
+            >
+              Fresh, spotless homes
+            </h1>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="section2Card w-full sm:w-[25%] flex">
+          <div
+            class="relative pt-24 sm:pt-28 pb-3 px-5 gap-1 flex flex-col flex-1 items-center bg-[#D9D9D9]/50 backdrop-blur-[15px] shadow-[0_4px_15.4px_0_rgba(0,0,0,0.25)] rounded-xl hover:bg-[#E41B388C] group transition-all duration-300"
+          >
+            <span
+              class="card2image absolute -top-5 p-5 bg-[#D9D9D9] rounded-full group-hover:bg-[#D72032] transition-all duration-300 h-24 sm:h-28 w-24 sm:w-28 flex items-center justify-center"
+            >
+              <img
+                class="group-hover:hidden block transition-all duration-300 w-[80%]"
+                src="./assets/svgs/homesection2card2.svg"
+                alt=""
+              />
+              <img
+                class="hidden group-hover:block transition-all duration-300 w-[80%]"
+                src="./assets/svgs/homesection2card2 copy.svg"
+                alt=""
+              />
+            </span>
+            <h1
+              class="card2heading text-[#000000] font-extrabold text-lg sm:text-2xl group-hover:text-[#FFFFFF] transition-all duration-300 text-center"
+            >
+              Deep Cleaning
+            </h1>
+            <h1
+              class="card2subheading text-[#000000] font-medium text-sm sm:text-lg group-hover:text-[#FFFFFF] transition-all duration-300 text-center"
+            >
+              Detail-focused, top to <br />
+              bottom
+            </h1>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="section2Card w-full sm:w-[25%] flex">
+          <div
+            class="relative pt-24 sm:pt-28 pb-3 px-1 gap-1 flex flex-col flex-1 items-center bg-[#D9D9D9]/50 backdrop-blur-[15px] shadow-[0_4px_15.4px_0_rgba(0,0,0,0.25)] rounded-xl hover:bg-[#E41B388C] group transition-all duration-300"
+          >
+            <span
+              class="card3image absolute -top-5 p-5 bg-[#D9D9D9] rounded-full group-hover:bg-[#D72032] transition-all duration-300 h-24 sm:h-28 w-24 sm:w-28 flex items-center justify-center"
+            >
+              <img
+                class="group-hover:hidden block transition-all duration-300 w-[80%]"
+                src="./assets/svgs/homesection2card3.svg"
+                alt=""
+              />
+              <img
+                class="hidden group-hover:block transition-all duration-300 w-[80%]"
+                src="./assets/svgs/homesection2card3 copy.svg"
+                alt=""
+              />
+            </span>
+            <h1
+              class="card3heading text-[#000000] font-extrabold text-lg sm:text-2xl group-hover:text-[#FFFFFF] transition-all duration-300 text-center whitespace-nowrap"
+            >
+              Commercial Cleaning
+            </h1>
+            <h1
+              class="card3subheading text-[#000000] font-medium text-sm sm:text-lg group-hover:text-[#FFFFFF] transition-all duration-300 text-center"
+            >
+              Clean spaces for your <br />
+              business
+            </h1>
+          </div>
+        </div>
+        <!-- card4 -->
+        <div class="section2Card w-full sm:w-[25%] flex">
+          <div
+            class="relative pt-24 sm:pt-28 pb-3 px-1 gap-1 flex flex-col flex-1 items-center bg-[#D9D9D9]/50 backdrop-blur-[15px] shadow-[0_4px_15.4px_0_rgba(0,0,0,0.25)] rounded-xl hover:bg-[#E41B388C] group transition-all duration-300"
+          >
+            <span
+              class="card4image absolute -top-5 p-5 bg-[#D9D9D9] rounded-full group-hover:bg-[#D72032] transition-all duration-300 h-24 sm:h-28 w-24 sm:w-28 flex items-center justify-center"
+            >
+              <img
+                class="group-hover:hidden block transition-all duration-300 w-[70%]"
+                src="./assets/svgs/homesection2card4.svg"
+                alt=""
+              />
+              <img
+                class="hidden group-hover:block transition-all duration-300 w-[70%]"
+                src="./assets/svgs/homesection2card4 copy.svg"
+                alt=""
+              />
+            </span>
+            <h1
+              class="card4heading text-[#000000] font-extrabold text-lg sm:text-2xl group-hover:text-[#FFFFFF] transition-all duration-300 text-center"
+            >
+              Pressure Washing
+            </h1>
+            <h1
+              class="card4subheading text-[#000000] font-medium text-sm sm:text-lg group-hover:text-[#FFFFFF] transition-all duration-300 text-center"
+            >
+              Powerful exterior <br />
+              cleaning
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION 3 -->
+      <div id="section3Trigger" class="section3wrapper relative pt-16 sm:pt-52">
+        <img
+          class="section3ArrowRight absolute top-5 sm:top-20 right-0 w-[28%] sm:w-[18%]"
+          src="./assets/images/section3arrow.png"
+          alt=""
+        />
+        <img
+          class="section3absolutebottomimage absolute bottom-2 left-0 w-[18%] max-sm:hidden"
+          src="./assets/images/section3arrowleft.png"
+          alt=""
+        />
+        <div
+          class="section3main w-full max-sm:px-4 sm:pl-12 flex flex-col sm:flex-row gap-5 sm:gap-10 items-stretch"
+        >
+          <!-- section3left -->
+          <div class="section3left relative w-full sm:w-[55%]">
+            <img
+              class="section3leftimg1"
+              src="./assets/images/section3img1.png"
+              alt=""
+            />
+            <img
+              class="section3leftimg2 absolute -bottom-4 -right-5 w-[48%]"
+              src="./assets/images/section3img2.png"
+              alt=""
+            />
+          </div>
+          <!-- section3right -->
+          <div
+            class="section3right w-full sm:w-[45%] flex flex-col gap-5 2xl:gap-10 pt-5"
+          >
+            <h1
+              class="section3rightheading leading-[1.2] text-3xl sm:text-[3rem] 2xl:text-[3.4rem] font-extrabold text-center sm:text-start"
+            >
+              Cleaning Services <br />
+              Built on
+              <span class="text-[#E41B38]"
+                >Experience <br />
+                & Trust</span
+              >
+            </h1>
+            <p
+              class="section3rightsubheading text-base 2xl:text-[1.1rem] font-medium leadimg-[1.2] text-center sm:text-start hidden sm:block"
+            >
+              With over 15 years of experience, we’ve built a <br />
+              reputation for dependable service, attention to detail, <br />
+              and customer satisfaction. Our licensed and insured <br />
+              team is committed to delivering consistent results for <br />
+              every space we clean.
+            </p>
+            <p class="text-sm font-medium text-center block sm:hidden">
+              With over 15 years of experience, we’ve built a reputation for
+              dependable service, attention to detail, and customer
+              satisfaction. Our licensed and insured team is committed to
+              delivering consistent results for every space we clean.
+            </p>
+            <div
+              class="section3rightbuttons flex flex-col sm:flex-row items-center max-sm:gap-2 gap-4 flex-wrap"
+            >
+              <button
+                class="button1 bg-[#023181A6] text-[#FFFFFF] rounded-xl px-4 py-2 flex gap-3"
+              >
+                <img class="w-3" src="./assets/svgs/tick.svg" alt="" /> 15+
+                Years of Experience
+              </button>
+              <button
+                class="button2 bg-[#023181A6] text-[#FFFFFF] rounded-xl px-4 py-2 flex gap-3"
+              >
+                <img class="w-3" src="./assets/svgs/tick.svg" alt="" /> Licensed
+                & Insured
+              </button>
+              <button
+                class="button3 bg-[#023181A6] text-[#FFFFFF] rounded-xl px-4 py-2 flex gap-3"
+              >
+                <img class="w-3" src="./assets/svgs/tick.svg" alt="" /> Free
+                Estimates
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION 4 -->
+      <div id="section4Trigger" class="relative w-full">
+        <img
+          class="section4bubbleleft absolute bottom-56 left-0 w-[20%] max-sm:hidden"
+          src="./assets/images/seection4bubble1.png"
+          alt="" />
+        <img
+          class="section4bubbleright absolute bottom-16 right-0 w-[30%] max-sm:hidden"
+          src="./assets/images/section4bubble2.png"
+          alt="" />
+        <img src="./assets/images/section4topcloud.png" alt="" />
+        <div
+          class="section4content w-full bg-[linear-gradient(to_bottom,#CBE3FF_100%,#FFFFFF_100%)] flex flex-col gap-3 sm:gap-5">
+          <div
+            class="px-4 sm:px-20 sm:pb-10 flex flex-col sm:flex-row justify-between items-center">
+            <h1
+              class="section4heading leading-[1.2] text-[2.1rem] sm:text-[3rem] 2xl:text-[3.4rem] font-extrabold text-center sm:text-start">
+              Our Professional <br /><span class="text-[#1148A9]">
+                Cleaning Services
+              </span>
+            </h1>
+            <p
+              class="section4para text-end text-base sm:text-[1rem] 2xl:text-[1.1rem] font-medium leadimg-[1.2] max-sm:hidden">
+              Comprehensive cleaning solutions tailored to your <br />
+              needs — inside and out.
+            </p>
+            <p
+              class="section4paramobile text-center text-base font-medium leadimg-[1.2] block sm:hidden">
+              Comprehensive cleaning solutions tailored to your needs — inside
+              and out.
+            </p>
+          </div>
+          <!-- card1 . card2 .card3 -->
+          <div class="px-4 flex flex-col sm:flex-row w-full gap-3 sm:gap-5">
+            <!-- card1 -->
+            <div class="section4clouds relative w-full sm:w-[33%]">
+              <img
+                class="w-full"
+                src="./assets/images/section4card1.png"
+                alt="" />
+              <h1
+                class="section4cloudsheading absolute bottom-8 left-5 text-[#FFFFFF] text-xl sm:text-3xl 2xl:text-4xl font-extrabold">
+                House Cleaning
+              </h1>
+            </div>
+            <!-- card2 -->
+            <div class="section4clouds relative w-full sm:w-[33%]">
+              <img
+                class="w-full"
+                src="./assets/images/section4card2.png"
+                alt="" />
+              <h1
+                class="section4cloudsheading absolute bottom-8 left-5 text-[#FFFFFF] text-xl sm:text-3xl 2xl:text-4xl font-extrabold">
+                Deep Cleaning
+              </h1>
+            </div>
+            <!-- card3 -->
+            <div class="section4clouds relative w-full sm:w-[33%]">
+              <img
+                class="w-full"
+                src="./assets/images/section4card3.png"
+                alt="" />
+              <h1
+                class="section4cloudsheading absolute bottom-8 left-5 text-[#FFFFFF] text-xl sm:text-3xl 2xl:text-4xl font-extrabold">
+                Window Cleaning
+              </h1>
+            </div>
+          </div>
+          <!-- card4 . card5 -->
+          <div
+            class="px-4 flex flex-col sm:flex-row justify-center w-full gap-3 sm:gap-5">
+            <!-- card4 -->
+            <div class="section4clouds relative w-full sm:w-[33%]">
+              <img
+                class="w-full"
+                src="./assets/images/section4card4.png"
+                alt="" />
+              <h1
+                class="section4cloudsheading absolute bottom-8 left-5 text-[#FFFFFF] text-xl sm:text-3xl 2xl:text-4xl font-extrabold">
+                Gutter Cleaning
+              </h1>
+            </div>
+            <!-- card5 -->
+            <div class="section4clouds relative w-full sm:w-[33%]">
+              <img
+                class="w-full"
+                src="./assets/images/section4card5.png"
+                alt="" />
+              <h1
+                class="section4cloudsheading absolute bottom-8 left-5 text-[#FFFFFF] text-xl sm:text-3xl 2xl:text-4xl font-extrabold">
+                Pressure Washing
+              </h1>
+            </div>
+          </div>
+          <!-- card6 . card7 .card8 -->
+          <div class="px-4 flex flex-col sm:flex-row w-full gap-3 sm:gap-5">
+            <!-- card6 -->
+            <div class="section4clouds relative w-full sm:w-[33%]">
+              <img
+                class="w-full"
+                src="./assets/images/section4card6.png"
+                alt="" />
+              <h1
+                class="section4cloudsheading absolute bottom-8 left-5 text-[#FFFFFF] text-xl sm:text-3xl 2xl:text-4xl font-extrabold">
+                Post-Construction Cleaning
+              </h1>
+            </div>
+            <!-- card7 -->
+            <div class="section4clouds relative w-full sm:w-[33%]">
+              <img
+                class="w-full"
+                src="./assets/images/section4card7.png"
+                alt="" />
+              <h1
+                class="section4cloudsheading absolute bottom-8 left-5 text-[#FFFFFF] text-xl sm:text-3xl 2xl:text-4xl font-extrabold">
+                Organization Services
+              </h1>
+            </div>
+            <!-- card8 -->
+            <div class="section4clouds relative w-full sm:w-[33%]">
+              <img
+                class="w-full"
+                src="./assets/images/section4card8.png"
+                alt="" />
+              <h1
+                class="section4cloudsheading absolute bottom-8 left-5 text-[#FFFFFF] text-xl sm:text-3xl 2xl:text-4xl font-extrabold">
+                Office Cleaning
+              </h1>
+            </div>
+          </div>
+        </div>
+        <img class="" src="./assets/images/section4bottomcloud.png" alt="" />
+      </div>
+      <!-- SECTION 5 -->
+      <div
+        id="section5Trigger"
+        class="w-full min-h-screen flex justify-between pt-5 sm:pt-10"
+      >
+        <div
+          class="relative w-full sm:w-[40%] flex flex-col pt-5 sm:pt-36 gap-32 sm:gap-20 max-sm:px-4"
+        >
+          <img
+            src="./assets/images/mapMobile.png"
+            alt=""
+            class="absolute top-20 right-0 sm:hidden"
+          />
+          <img
+            src="./assets/svgs/locationMark.svg"
+            alt=""
+            class="absolute top-[44%] left-[10%] w-10 sm:hidden"
+          />
+          <div class="relative flex flex-col gap-5 sm:pl-20">
+            <h2
+              class="section5Heading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+            >
+              Proudly Serving <br />
+              <span class="text-[#E41B38]">Santa Cruz, CA</span>
+            </h2>
+            <h2
+              class="section5Heading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+            >
+              Proudly Serving <span class="text-[#E41B38]">Santa Cruz, CA</span>
+            </h2>
+            <p class="section5Para text-base 2xl:text-[1.1rem] max-sm:hidden">
+              We provide professional cleaning services <br />
+              throughout Santa Cruz and surrounding areas, <br />
+              delivering consistent quality you can rely on.
+            </p>
+            <p class="section5Para text-sm text-center sm:hidden">
+              We provide professional cleaning services throughout Santa Cruz
+              and surrounding areas, delivering consistent quality you can rely
+              on.
+            </p>
+            <div class="flex items-center gap-5 max-sm:flex-col mt-2">
+              <a href="./contact.html" class="section5Btn">
+                <button
+                  class="section5Btn max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#1148A9] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+                >
+                  Contact Us
+                  <img src="./assets/svgs/righty.svg" alt="" class="w-4" />
+                </button>
+              </a>
+              <div class="section5Btn">
+                <button
+                  class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-[#E41B38] hover:text-white hover:bg-[#1148A9] items-center border-2 border-[#E41B38] hover:border-transparent hover:shadow-2xl transition duration-150"
+                >
+                  Call us (831) 431-3896
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative w-full flex items-stretch gap-3 sm:gap-5 max-sm:flex-col"
+          >
+            <div
+              class="section5Image flex-1 shrink-0 rounded-lg overflow-hidden bg-red-400"
+            >
+              <img
+                src="./assets/images/section5Image1.png"
+                alt=""
+                class="shrink-0 object-cover h-full"
+              />
+            </div>
+            <div
+              class="section5Image flex-1 shrink-0 rounded-lg overflow-hidden bg-red-300"
+            >
+              <img
+                src="./assets/images/section5Image2.png"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="w-[60%] max-sm:hidden relative">
+          <img
+            src="./assets/images/map.png"
+            alt=""
+            class="section5Map absolute top-0 right-0 -translate-y-72"
+          />
+          <img
+            src="./assets/svgs/locationMark.svg"
+            alt=""
+            class="section5LocationMark absolute top-1/2 left-24 2xl:left-20"
+          />
+          <img
+            src="./assets/images/leftDirectArrow.png"
+            alt=""
+            class="section5ArrowRight absolute top-0 right-0 w-[30%]"
+          />
+        </div>
+      </div>
+      <!-- BANNER -->
+      <div
+        id="bannerTrigger"
+        class="relative w-full px-4 sm:px-24 2xl:px-40 max-sm:pt-5 max-sm:pb-16 pb-12 sm:pt-24 2xl:pt-40"
+      >
+       <img
+          src="./assets/images/RightDirectArrow.png"
+          alt=""
+          class="bannerArrowLeft w-[30%] sm:w-[15%] absolute bottom-0 left-0"
+        />
+        <div
+          class="relative bg-[#E41B38] text-white rounded-[30px] flex justify-between max-sm:flex-col max-sm:items-center"
+        >
+          <div
+            class="w-full sm:w-1/2 flex flex-col gap-5 sm:gap-8 sm:pl-10 py-5 sm:py-10 2xl:py-12"
+          >
+            <h2
+              class="bannerHeading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+            >
+              Ready for a <br />
+              Cleaner, <br />
+              Healthier Space?
+            </h2>
+            <h2
+              class="bannerHeading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+            >
+              Ready for a Cleaner, Healthier Space?
+            </h2>
+            <p class="bannerPara text-base 2xl:text-[1.1rem] max-sm:hidden">
+              Contact 831 Cleaning Services today and <br />
+              experience professional cleaning done right.
+            </p>
+            <p class="bannerPara text-sm text-center sm:hidden">
+              Contact 831 Cleaning Services today and experience professional
+              cleaning done right.
+            </p>
+            <div class="flex items-center gap-5 max-sm:flex-col mt-2">
+              <a href="./contact.html" class="section5Btn">
+                <button
+                  class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-white hover:text-white hover:bg-[#1148A9] items-center border-2 border-white hover:border-transparent hover:shadow-2xl transition duration-150"
+                >
+                  Request a Free Estimate
+                  <img src="./assets/svgs/righty.svg" alt="" class="w-4" />
+                </button>
+              </a>
+              <div class="section5Btn">
+                <button
+                  class="max-sm:flex-1 px-6 py-3 flex gap-2 text-sm 2xl:text-base rounded-md font-bold text-white hover:text-white hover:bg-[#1148A9] items-center border-2 border-white hover:border-transparent hover:shadow-2xl transition duration-150"
+                >
+                  Call us (831) 431-3896
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="w-full sm:w-1/2 relative">
+            <img
+              src="./assets/images/bannerDrops.png"
+              alt=""
+              class="bannerDrops absolute -bottom-32 sm:-bottom-52 -right-10 sm:-right-60 w-[70%]"
+            />
+            <img
+              src="./assets/images/bannerRightImage.png"
+              alt=""
+              class="bannerRightBigImage sm:absolute sm:-top-16 sm:-right-10"
+            />
+            <img
+              src="./assets/images/bannerRightImageSmall.png"
+              alt=""
+              class="bannerRightsmallImage absolute -bottom-10 sm:-bottom-20 -right-5 sm:-right-24 max-sm:w-[60%]"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- RECENT PROJECT -->
+       <div 
+       id="recentProjectTrigger"
+       class="w-full pt-12 sm:pt-24 sm:pl-20 flex flex-col gap-8 sm:gap-12">
+         <h2
+            class="recentProjectHeading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+          >
+           Recent Projects
+          </h2>
+          <h2
+            class="recentProjectHeading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+          >
+           Recent Projects
+          </h2>
+
+          <div class="w-full flex items-center gap-10 max-sm:px-4 whitespace-nowrap overflow-x-auto
+          hide-scrollbar">
+            <div class="w-full shrink-0 sm:w-[28%] h-[68dvh] sm:h-[80dvh] 2xl:h-[75dvh] bg-red-400 rounded-[30px] overflow-hidden">
+              <img src="./assets/images/recentProjectCard1.jpeg" alt=""
+              class="w-full h-full object-cover">
+            </div>
+             <div class="w-full shrink-0 sm:w-[28%] h-[68dvh] sm:h-[80dvh] 2xl:h-[75dvh] bg-red-400 rounded-[30px] overflow-hidden">
+              <img src="./assets/images/recentProjectCard2.jpeg" alt=""
+              class="w-full h-full object-cover">
+            </div> <div class="w-full shrink-0 sm:w-[28%] h-[68dvh] sm:h-[80dvh] 2xl:h-[75dvh] bg-red-400 rounded-[30px] overflow-hidden">
+              <img src="./assets/images/recentProjectCard3.jpeg" alt=""
+              class="w-full h-full object-cover">
+            </div> <div class="w-full shrink-0 sm:w-[28%] h-[68dvh] sm:h-[80dvh] 2xl:h-[75dvh] bg-red-400 rounded-[30px] overflow-hidden">
+              <img src="./assets/images/recentProjectCard4.png" alt=""
+              class="w-full h-full object-cover">
+            </div>
+          </div>
+
+       </div>
+      <!-- REVIEWS -->
+      <div
+        id="reviewsTrigger"
+        class="w-full h-fit pt-10 sm:pt-20 px-4 sm:px-24 flex flex-col gap-10 pb-10 sm:pb-28"
+      >
+        <!-- reviwstop -->
+        <div class="flex flex-col gap-2 max-sm:items-center">
+          <h2
+            class="reviewsHeading leading-[1.2] text-[3rem] 2xl:text-[3.4rem] font-extrabold max-sm:hidden"
+          >
+            What Our Clients Are Saying
+          </h2>
+          <h2
+            class="reviewsHeading leading-[1.2] text-[2.1rem] font-extrabold sm:hidden text-center"
+          >
+            What Our Clients Are Saying
+          </h2>
+
+          <div
+            class="reviewsPara flex items-center justify-between w-fit gap-2"
+          >
+            <img
+              class="w-20 sm:w-28"
+              src="./assets/svgs/reviewStars.svg"
+              alt=""
+            />
+
+            <p class="text-base 2xl:text-[1.1rem] max-sm:hidden">
+              5.0 rating of 12 reviews
+            </p>
+            <p class="text-sm text-center sm:hidden">
+              5.0 rating of 12 reviews
+            </p>
+          </div>
+        </div>
+        <!-- reviewsbottom -->
+        <div
+          class="reviewsbottom w-full flex flex-col max-sm:gap-5 sm:flex-row justify-evenly 2xl:justify-center 2xl:gap-10 items-center sm:items-stretch mont"
+        >
+          <!-- review1 -->
+          <div
+            class="reviewCard review1 bg-[#FFF] w-full sm:w-[30%] 2xl:w-[29%] rounded-2xl flex flex-col items-center justify-between px-5 py-6 gap-2 sm:gap-3 2xl:gap-4 border border-[#56545B]"
+          >
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/reviewStars.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/googleReview.svg" alt="" />
+            </div>
+            <p
+              class="w-full h-fit text-sm sm:text-base 2xl:text-base 3xl:text-2xl text-[#020101]"
+            >
+              The best service I’ve received in a long time! The team was
+              incredibly responsive, and their expertise was evident in the
+              final product. There was a small miscommunication initially, but
+              they quickly resolved it. I would definitely work with them again.
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2"
+            >
+              <h1
+                class="font-semibold text-lg sm:text-xl 2xl:text-base 3xl:text-2xl text-[#020101]"
+              >
+                Isabella Turner
+              </h1>
+              <p
+                class="text-[#3535FD] text-sm sm:text-base 2xl:text-base 3xl:text-2xl"
+              >
+                Project Manager
+              </p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/svgs/user.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- review2 -->
+          <div
+            style="background-image: url(assets/images/reviewperson.png)"
+            class="reviewCard review2 relative w-full sm:w-[30%] 2xl:w-[27%] max-sm:h-[380px] bg-[#F9FAFB] rounded-2xl flex flex-col items-center justify-end px-5 py-6 gap-2 sm:gap-3 bg-img bg-cover bg-center flex-shrink-0 2xl:gap-5 border border-[#56545B] bg-gradient-to-t from-red-800 to-transparent"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/30 rounded-2xl to-transparent"
+            ></div>
+            <div class="flex w-full justify-between">
+              <div
+                class="w-full h-fit flex flex-col justify-between items-start gap-4 z-10"
+              >
+                <img class="w-28" src="./assets/svgs/reviewStars.svg" alt="" />
+
+                <div class="flex gap-3 items-center justify-between">
+                  <img
+                    class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                    src="./assets/svgs/user.svg"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <h1
+                      class="text-[#FFFFFF] font-semibold text-lg sm:text-xl 2xl:text-base 3xl:text-2xl"
+                    >
+                      Henry Foster
+                    </h1>
+                    <p
+                      class="text-[#FFFFFF] text-sm sm:text-base 2xl:text-base 3xl:text-2xl"
+                    >
+                      Project Manager
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="w-8 mt-2"
+                src="./assets/svgs/googleReview.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- review3 -->
+          <div
+            class="reviewCard review3 bg-white w-full sm:w-[30%] 2xl:w-[29%] rounded-2xl flex flex-col items-center justify-between px-5 py-6 gap-2 sm:gap-3 2xl:gap-4 border border-[#56545B]"
+          >
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/reviewStars.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/googleReview.svg" alt="" />
+            </div>
+            <p
+              class="w-full h-fit text-sm sm:text-base 2xl:text-base 3xl:text-2xl text-[#020101]"
+            >
+              The marketing campaign they created for us was outstanding, and we
+              saw significant engagement. However, I wish they had provided more
+              frequent updates during the process. Overall, great work! Highly
+              recommended!
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2"
+            >
+              <h1
+                class="font-semibold text-lg sm:text-xl 2xl:text-base 3xl:text-2xl text-[#020101]"
+              >
+                Nathan Scott
+              </h1>
+              <p
+                class="text-[#3535FD] text-sm sm:text-base 2xl:text-base 3xl:text-2xl"
+              >
+                CEO, Scott Enterprises
+              </p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/svgs/user.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div id="footerTrigger" class="w-full">
+        <div
+          class="w-full bg-[#023181] pt-10 sm:pt-20 pb-5 sm:pb-10 px-4 sm:px-32 flex flex-col gap-5 sm:gap-16 text-white"
+        >
+          <div
+            class="flex items-center justify-between max-sm:flex-col max-sm:gap-3"
+          >
+            <div
+              class="w-full sm:w-[30%] flex flex-col items-center gap-2 sm:gap-4 sm:whitespace-nowrap"
+            >
+              <img
+                src="./assets/images/footerLogo.png"
+                alt=""
+                class="footerLogo w-[80%] max-sm:w-[60%]"
+              />
+              <p
+                class="footerPara mont sm:text-[1rem] 2xl:text-[1.2rem] max-sm:hidden text-center"
+              >
+                Professional cleaning solutions tailored <br />
+                to your home and business. Trusted for <br />
+                quality, reliability, and attention to detail <br />
+                for over 15 years.
+              </p>
+              <p class="footerPara mont text-sm sm:hidden text-center">
+                Professional cleaning solutions tailored to your home and
+                business. Trusted for quality, reliability, and attention to
+                detail for over 15 years.
+              </p>
+            </div>
+            <div class="w-full sm:w-[30%] flex flex-col items-center">
+              <div
+                class="flex flex-col gap-2 text-base 2xl:text-lg mont max-sm:hidden"
+              >
+                <h2 class="footerMiddle font-extrabold">Quick Links</h2>
+                <a class="footerMiddle" href="./home.html">Home</a>
+                <a class="footerMiddle" href="./residential.html">Residential Cleaning</a>
+                <a class="footerMiddle" href="./commercial.html">Commercial Cleaning </a>
+                <a class="footerMiddle" href="./gallery.html">Gallery</a>
+                <a class="footerMiddle" href="./about.html">About Us</a>
+                <a class="footerMiddle" href="./contact.html">Contact</a>
+              </div>
+            </div>
+            <div
+              class="w-full sm:w-[30%] flex flex-col text-base 2xl:text-lg mont gap-2 max-sm:items-center max-sm:text-center"
+            >
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerPhone.svg" alt="" class="w-5" />
+                <p>(831) 431-3896</p>
+              </div>
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerEmail.svg" alt="" class="w-5" />
+                <p>info@yourdomain.com</p>
+              </div>
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img
+                  src="./assets/svgs/footerLocation.svg"
+                  alt=""
+                  class="w-5"
+                />
+                <p>Santa Cruz, CA & Surrounding Areas</p>
+              </div>
+              <div class="footerRight flex items-center gap-2 max-sm:flex-col">
+                <img src="./assets/svgs/footerClock.svg" alt="" class="w-5" />
+                <p> Monday – Friday: 8:00 AM – 4:00 PM <br>
+                   Saturday: 8:00 AM – 12:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-between text-xs mont max-sm:flex-col max-sm:text-center max-sm:gap-4 max-sm:mt-5\ sm:px-20"
+          >
+            <p>Privacy Policy | Your Privacy Choices</p>
+            <p>
+              © 2025 CIMA CONCRETE. All Rights Reserved. Web Design By
+              <a href="https://brandedstrong.com/">Branded Strong</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./homeAnimation.js"></script>
+    <script src="./common.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
